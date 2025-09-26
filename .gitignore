@@ -1,0 +1,6 @@
+terraform.secret.auto.tfvars
+manual_initial steps.md
+.terraform*
+terraform.*
+terraform.tfstate
+info.md
