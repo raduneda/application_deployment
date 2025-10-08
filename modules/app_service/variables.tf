@@ -11,13 +11,14 @@ variable "resource_group_name" {
 variable "app_svc" {
   description = "config for app service plan"
   type = object({
-    name                        = string
-    kind                        = string
-    os_type                     = string
-    client_certificate_mode     = string
-    app_settings                = optional(map(string), {})
-    enable_application_insights = optional(bool, false)
-    site_config                 = optional(any)
+    name                          = string
+    kind                          = string
+    os_type                       = string
+    client_certificate_mode       = string
+    app_settings                  = optional(map(string), {})
+    enable_application_insights   = optional(bool, false)
+    site_config                   = optional(any)
+    public_network_access_enabled = optional(bool, false)
   })
 }
 

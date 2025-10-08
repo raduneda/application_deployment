@@ -12,6 +12,7 @@ module "app_svc" {
   app_settings                = var.app_svc.app_settings
   enable_application_insights = var.app_svc.enable_application_insights
   site_config                 = var.app_svc.site_config
+  public_network_access_enabled = var.app_svc.public_network_access_enabled
   tags                        = var.tags
   private_endpoints = { for k, v in var.private_endpoints :
     k => {

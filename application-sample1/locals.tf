@@ -32,6 +32,7 @@ locals {
       always_on         = false
       use_32_bit_worker = true
     }
+    public_network_access_enabled = true
   }
 
   resource_group = {
